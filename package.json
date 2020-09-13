@@ -8,6 +8,9 @@
   },
   "author": "Anu",
   "license": "ISC",
+  "engines": {
+    "node": "10.15.3"
+  },
   "description": "",
   "dependencies": {
     "colors": "^1.4.0",
