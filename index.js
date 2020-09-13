@@ -82,7 +82,14 @@ io.on("connect", (socket) => {
 //     res.sendFile(path.join(__dirname, "build", "index.html"));
 //   });
 // }
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5000;
+}
+server.listen(port, function () {
+  console.log("Sever has started on port 5000");
+});
 
-server.listen(process.env.NODE_PORT || 5000, () =>
-  console.log(`Server has started at ${process.env.NODE_PORT}`)
-);
+// server.listen(process.env.NODE_PORT || 5000, () =>
+//   console.log(`Server has started at ${process.env.NODE_PORT}`)
+// );
