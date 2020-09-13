@@ -16,6 +16,7 @@ connectDB();
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
+
 const authroutes = require("./Routes/authroutes");
 
 app.use(express.json());
