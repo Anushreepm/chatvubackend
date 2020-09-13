@@ -6,7 +6,7 @@ const {
   activateAccount,
   forgotPassword,
   resetPassword,
-} = require("../controller/authController1");
+} = require("../controller/authController");
 
 const { userSignupValidator } = require("../validators/auth");
 const { runValidation } = require("../validators");

@@ -137,7 +137,6 @@ exports.activateAccount = (req, res) => {
               error: "db",
             });
           }
-
           return res.json({
             success: true,
             message: `Succesfully activated account, please login to your account`,
