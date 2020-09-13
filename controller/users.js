@@ -1,4 +1,4 @@
-const userProfile = require("../models/auth");
+const userProfile = require("../models/userProfile");
 
 exports.listUsers = (__, res) => {
   userProfile
