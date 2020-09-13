@@ -22,7 +22,7 @@ exports.signUp = (req, res) => {
 
     if (err) {
       return res.status(401).json({
-        succes: false,
+        success: false,
         message: "unable to fetch data from server",
         error: "user",
       });
